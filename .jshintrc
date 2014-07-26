@@ -1,0 +1,29 @@
+{
+	"curly": true,
+	"noempty": true,
+	"newcap": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"undef": true,
+	"devel": true,
+	"node": true,
+	"browser": true,
+	"evil": false,
+	"latedef": true,
+	"nonew": true,
+	"trailing": true,
+	"immed": true,
+	"smarttabs": true,
+	"strict": false,
+	"scripturl": true,
+	"globals": {
+		"define": true,
+		"console": true,
+		"$": true,
+		"req": true,
+		"res": true,
+		"next": true,
+		"err": true,
+		"require": true
+	}
+}

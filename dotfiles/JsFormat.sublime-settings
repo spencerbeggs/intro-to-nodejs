@@ -1,0 +1,6 @@
+{
+	// jsformat options
+	"format_on_save": true,
+	"jsbeautifyrc_files": true,
+	"ignore_patterns": ["bower.json", "package.json"]
+}

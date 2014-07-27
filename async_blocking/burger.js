@@ -2,7 +2,8 @@ function orderBurger(style, callback) {
 	var cookingTime;
 	if (style === "well done") {
 		cookingTime = 5000;
-	} else if (style === "rare") {
+	}
+	else if (style === "rare") {
 		cookingTime = 2500;
 	}
 	setTimeout(function() {

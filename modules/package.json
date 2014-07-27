@@ -1,0 +1,29 @@
+{
+	"name": "spencer",
+	"version": "0.0.0",
+	"description": "This a demo module.",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://spencerbeggs.com/demo.git"
+	},
+	"keywords": [
+		"demo",
+		"test"
+	],
+	"author": "C. Spencer Beggs",
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.7.0",
+		"passport-dwolla": "git://github.com/spencerbeggs/passport-dwolla",
+		"grunt-cli": "^0.1.13",
+		"moment": "2.7.0"
+	},
+	"devDependencies": {
+		"brwoserify": "latest"
+	}
+}

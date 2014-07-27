@@ -1,0 +1,98 @@
+#barnyard {
+	position: relative;
+}
+
+.animal {
+	position: absolute;
+	left: 40px;
+	bottom: 40px;
+	background-size: cover;
+}
+
+.person {
+	background-size: cover;
+	position: absolute;
+}
+
+#spencer {
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/spencer.jpg);
+	bottom: 10px;
+	left: 99px;
+}
+
+#gracie {
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/gracie.jpg);
+	bottom: 10px;
+	left: 56px;
+}
+
+.pig {
+	width: 40px;
+	height: 41px;
+	background-image: url(../images/pig.png);
+}
+
+.cow {
+	width: 40px;
+	height: 45px;
+	background-image: url(../images/cow.png);
+}
+
+.chicken {
+	width: 40px;
+	height: 48px;
+	background-image: url(../images/chicken.png);
+}
+
+.animal:nth-child(1) {
+	left: 200px;
+	bottom: 20px;
+}
+
+.animal:nth-child(2) {
+	left: 306px;
+	bottom: 56px;
+}
+
+.animal:nth-child(3) {
+	left: 20px;
+	bottom: 86px;
+}
+
+.animal:nth-child(4) {
+	left: 175px;
+	bottom: 90px;
+}
+
+.animal:nth-child(5) {
+	left: 536px;
+	bottom: 82px;
+}
+
+.animal:nth-child(6) {
+	left: 423px;
+	bottom: 30px;
+}
+
+.animal:nth-child(7) {
+	left: 387px;
+	bottom: 99px;
+}
+
+.animal:nth-child(8) {
+	left: 489px;
+}
+
+.animal:nth-child(9) {
+	left: 114px;
+	bottom: 70px;
+}
+
+.animal:nth-child(10) {
+	left: 222px;
+	bottom: 67px;
+}

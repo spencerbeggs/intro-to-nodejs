@@ -1,0 +1,42 @@
+#barnyard {
+	width: 625px;
+	height: 434px;
+	background-image: url(../images/background.jpg);
+}
+
+.animal {
+
+}
+
+.cow {
+	background-image: url(../images/cow.png);
+}
+
+.pig {
+	background-image: url(../images/pig.png);
+}
+
+.chicken {
+	background-image: url(../images/chicken.png);
+}
+
+.person {
+
+}
+
+#spencer {
+	background-image: url(../images/spencer.jpg);
+	width: 50px;
+	height: 50px;
+}
+
+#gracie {
+	background-image: url(../images/gracie.jpg);
+	width: 50px;
+	height: 50px;
+}
+
+#roger {
+	width: 75px;
+	height: 75px;
+}

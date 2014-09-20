@@ -5,6 +5,7 @@ var timestamps = require("mongoose-times");
 
 var AnimalSchema = new Schema({
 	name: String,
+	type: String,
 	weight: Number
 }, {
 	toObject: {
@@ -16,5 +17,14 @@ var AnimalSchema = new Schema({
 });
 
 AnimalSchema.plugin(timestamps);
+
+AnimalSchema.virtual("isPig").get(function() {
+	if (this.type === "pig") {
+		return true;
+	}
+	else {
+		return false;
+	}
+});
 
 module.exports = mongoose.model("Animal", AnimalSchema);

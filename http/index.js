@@ -2,7 +2,12 @@ var url = "https://api.instagram.com/v1/media/popular?client_id=6571a0547b8b487a
 var https = require("https");
 
 https.get(url, function(res) {
+	var photos = "";
 	res.on("data", function(chunk) {
-		process.stdout.write(chunk);
+		photos += chunk;
+		//process.stdout.write(chunk);
+	});
+	res.on("end", function() {
+		console.log(JSON.parse(photos));
 	});
 });

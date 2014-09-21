@@ -1,0 +1,19 @@
+#town #library {
+  width: 600px;
+  height: 350px;
+  background-color: #0000ff;
+}
+#town #library #door {
+  margin-top: 270px;
+  width: 80px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff0000;
+}
+#town #library .book {
+  width: 30px;
+  height: 60px;
+  background-color: cyan;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22less%2Ftown.less%22%2C%22less%2Flibrary.less%22%2C%22less%2Fbook.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%2CKCQA%3BEACC%2CYAAA%3BEACA%2CaAAA%3BEACA%2CyBAAA%3B%3BADXD%2CKCQA%2CSAIC%3BEACC%2CiBAAA%3BEACA%2CWAAA%3BEACA%2CaAAA%3BEAXD%2CiBAAA%3BEACA%2CkBAAA%3BEAYC%2CyBAAA%3B%3BADjBF%2CKCQA%2CSCHA%2CCALA%3BEACC%2CWAAA%3BEACA%2CYAAA%3BEACA%2CsBAAA%22%7D */

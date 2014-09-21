@@ -22,13 +22,22 @@ module.exports = function(grunt) {
 			}
 		}
 	};
+
 	tasks.less = {
-		app: {
+		town: {
 			options: {
 				sourceMap: true
 			},
 			files: {
-				"public/css/library.css": ["less/library.less", "less/book.less"]
+				"public/css/town.css": ["less/town.less"]
+			}
+		},
+		prod: {
+			options: {
+				sourceMap: false
+			},
+			files: {
+				"public/css/prod.css": ["less/library.less", "less/book.less"]
 			}
 		}
 	};

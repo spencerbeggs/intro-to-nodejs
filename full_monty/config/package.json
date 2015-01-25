@@ -1,0 +1,8 @@
+{
+	"name": "config",
+	"version": "1.0.0",
+	"description": "The universal config file.",
+	"main": "index.js",
+	"author": "Your name here.",
+	"license": "MIT"
+}

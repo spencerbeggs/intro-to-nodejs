@@ -1,5 +1,5 @@
 "use strict";
-var config = require("config");
+var config = require("../../config/index.js");
 var pjson = require("../../package.json");
 var minify = require("html-minifier").minify;
 var _ = require("lodash");
@@ -21,7 +21,8 @@ module.exports = function(req, res, next) {
 			res.vary("User-Agent");
 			return res.send(output);
 		});
-	} else {
+	}
+	else {
 		return next();
 	}
 };

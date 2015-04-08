@@ -1,6 +1,6 @@
 # Setup for OS X
 
-Macs are great for developing Node.JS and most students who take this course bring Macs. OS X even comes with Node installed by default, but we are going to do a little extra work to make life a little easier during class.
+Macs are great for developing Node.JS. OS X even comes with Node installed by default, but we are going to do a little extra work to make life a little easier during class.
 
 All you need to be able to follow along during the lessons is a working installation of Node. If you can't complete one of the steps below (except installing Node itself), you should be able to run most of the example code.
 
@@ -22,7 +22,7 @@ Finally, you will need to install [Xcode's Command Line Tools](https://developer
 
 ![](img/command_line_tools.png)
 
-To test if you have Xcode install run the following command in your Terminal:
+To test if you have Xcode and installed run the following command:
 
 ```
 which make && which gcc
@@ -30,7 +30,72 @@ which make && which gcc
 
 It should return:
 
-```text
+```
 /usr/bin/make
 /usr/bin/gcc
 ```
+## Install Git
+
+Check to make sure you have Git available:
+
+```
+which git
+```
+
+should return:
+
+```
+/usr/bin/git
+```
+
+If you don't have Git installed, the easiest way to install or update git on a Mac is to download and install the [GitHub for Mac](https://mac.github.com/) GUI client.
+
+After you have installed it, open the program and go to **Preferences > Advanced** and then click on "Install Command Line Tools":
+
+![](img/github_command_line.png)
+
+We will use Git to access code examples. The demo code repository is hosted on GitHub. If you don't have an account yet, [sign up for one](https://github.com/join).
+
+## Install Atom
+
+[Atom](https://atom.io/) is a free text editor designed by GitHub. Although, you can use any text editor to follow along on with the examples, I recommend you download and install Atom. I am going to configure a couple plugins to help us debug our code.
+
+After you have installed Atom, open the program, then open it's program drop-down menu and select "Install Shell Commands":
+
+![](img/atom_install.png)
+
+After the shell commands have installed, we can add a few useful plugins to Atom. Open a new Terminal window and run:
+
+```
+apm install atom-beautify atom-handlebars jshint react
+```
+
+## Install NVM
+
+The [Node Version Manager](https://github.com/creationix/nvm) allows us to install and quickly switch between different versions of Node. In a new Terminal:
+
+```
+curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+```
+
+Next you need to enable NVM:
+
+```
+source ~/.nvm/nvm.sh
+```
+
+Download the latest version of Node:
+
+```
+nvm install 0.12
+```
+
+Tell new shells to use nvm and Node 0.12 on start up:
+
+```
+echo -e '\n#Config for Intro to Node.JS\nsource ~/.nvm/nvm.sh\nnvm use 0.12\nexport NODE_ENV=development' >> ~/.bash_profile
+```
+
+If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node 0.12";
+
+![](img/nvm_install.png)

@@ -99,3 +99,7 @@ echo -e '\n#Config for Intro to Node.JS\nsource ~/.nvm/nvm.sh\nnvm use 0.12\nexp
 If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node 0.12".
 
 ![](img/nvm_install.png)
+
+## Install RoboMongo
+
+[RoboMongo](http://robomongo.org/) is a cross-platform GUI client for MongoDB. It will help you see what you are doing in the database section.

@@ -60,3 +60,7 @@ Download the latest version of Node:
 ```
 nvmw install 0.12.0
 ```
+
+## Install RoboMongo
+
+[RoboMongo](http://robomongo.org/) is a cross-platform GUI client for MongoDB. It will help you see what you are doing in the database section.

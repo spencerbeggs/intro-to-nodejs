@@ -96,6 +96,6 @@ Tell new shells to use nvm and Node 0.12 on start up:
 echo -e '\n#Config for Intro to Node.JS\nsource ~/.nvm/nvm.sh\nnvm use 0.12\nexport NODE_ENV=development' >> ~/.bash_profile
 ```
 
-If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node 0.12";
+If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node 0.12".
 
 ![](img/nvm_install.png)

@@ -26,10 +26,10 @@ Whether you are a JS newbie or a seasoned ninja, a great article to review is ["
 
 If you want a deep crash course in JavaScript, Code Academy's [10-hour JavaScript course](http://www.codecademy.com/tracks/javascript) followed by their [3-hour jQuery course](http://www.codecademy.com/tracks/jquery) would be the best place to start. Again, not required.
 
-### Deploy Your Web Apps (optional)
+### Deploy Your Web Apps Live (optional)
 
-You will have the opportunity to deploy simple Web apps live on DigitalOcean hosting on a domain purchased from Namecheap.com. If interested, students should complete the following 24 hours before class:
+Students can deploy webapps they make in the workshop to DigitalOcean hosting on a domain purchased from Namecheap.com. Students can expect to spend about $20 for access if they intend to participate in this portion. If interested, students should complete the following 24 hours before class:
 
 * [Register a domain at Namecheap.com](https://www.namecheap.com/)
-* [Apply for access to Namecheap's API access](https://manage.www.namecheap.com/myaccount/modify-profile-api.asp?APIACCESS.x=1&rkey=NC)
+* [Apply for access to Namecheap's API](https://manage.www.namecheap.com/myaccount/modify-profile-api.asp?APIACCESS.x=1&rkey=NC)
 * [Register for a Digital Ocean account](https://cloud.digitalocean.com/registrations/new)

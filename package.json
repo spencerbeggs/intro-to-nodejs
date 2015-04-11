@@ -1,0 +1,25 @@
+{
+	"name": "intro-to-nodejs",
+	"version": "1.0.0",
+	"description": "Example files for the Introduction to Node.JS Weekend Workshop at General Assembly in NYC.",
+	"main": "lib/index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"sync": "node demos/callbacks/sync.js",
+		"async": "node demos/callbacks/async.js",
+		"burger": "node demos/callbacks/burger.js",
+		"sushi": "node demos/callbacks/sushi.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spencerbeggs/intro-to-nodejs.git"
+	},
+	"author": "C. Spencer Beggs <spencer@beg.gs>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/spencerbeggs/intro-to-nodejs/issues"
+	},
+	"homepage": "https://github.com/spencerbeggs/intro-to-nodejs"
+}

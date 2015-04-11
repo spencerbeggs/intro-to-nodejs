@@ -103,3 +103,9 @@ If you have setup your system correctly, when you open a new Terminal window you
 ## Install RoboMongo
 
 [RoboMongo](http://robomongo.org/) is a cross-platform GUI client for MongoDB. It will help you see what you are doing in the database section.
+
+## Expose hidden files
+
+```
+defaults write com.apple.finder AppleShowAllFiles YES.
+```

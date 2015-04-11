@@ -1,0 +1,12 @@
+{
+	"name": "config",
+	"version": "0.0.0",
+	"description": "A local config module. Options object available via require(\"config\") on both front and backend.",
+	"repository": "https://github.com/spencerbeggs/spa-skeleton",
+	"main": "index.js",
+	"author": "C. Spencer Beggs <spencer@beg.gs>",
+	"license": "Private",
+	"browser": {
+		"pjson": "../package.json"
+	}
+}

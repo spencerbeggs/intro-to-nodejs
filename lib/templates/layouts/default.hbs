@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html data-env="{{env}}">
+
+	<head>
+		<title>{{app.name}}</title>
+		{{#each css.head}}
+		<link href="{{url}}" rel="stylesheet"> {{/each}} {{#each js.head}}
+		<script {{#if id}}id={{this.id}} {{/if}}{{#if async}}async {{/if}}src="{{this.url}}" type="text/javascript"></script>
+		{{/each}}
+	</head>
+
+	<body id="{{pageId}}">
+		<main>{{{body}}}</main>
+		{{#each css.body}}
+		<link href="{{this}}" rel="stylesheet"> {{/each}} {{#each js.body}}
+		<script {{#if id}}id={{this.id}} {{/if}}{{#if async}}async {{/if}}src="{{this.url}}" type="text/javascript"></script>
+		{{/each}}
+	</body>
+
+</html>

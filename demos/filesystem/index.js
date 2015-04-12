@@ -14,7 +14,7 @@ https.get(url, function(res) {
 		_.each(obj.data, function(entry) {
 			file += entry.images.standard_resolution.url + "\n";
 		});
-		fs.writeFile("./url.txt", file, {
+		fs.writeFile(__dirname + "/url.txt", file, {
 			encoding: "utf-8"
 		}, function(err) {
 			console.log("file saved");

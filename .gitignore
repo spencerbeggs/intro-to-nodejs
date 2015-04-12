@@ -17,3 +17,4 @@ lib/public/css/*.css
 lib/public/css/*.map
 lib/public/js/*.js
 lib/demos/filesystem/excercise/output/*.txt
+npm-shrinkwrap.json

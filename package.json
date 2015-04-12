@@ -21,7 +21,9 @@
 		"fs-watch": "node demos/filesystem/watch.js",
 		"filesystem": "node demos/filesystem/index.js",
 		"filesystem-exercise": "node demos/filesystem/exercise/index.js",
-		"filesystem-answer": "node demos/filesystem/exercise/answer.js"
+		"filesystem-answer": "node demos/filesystem/exercise/answer.js",
+		"events": "node demos/events/index.js",
+		"mongo": "node demos/mongo/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -33,6 +35,7 @@
 		"url": "https://github.com/spencerbeggs/intro-to-nodejs/issues"
 	},
 	"dependencies": {
+		"async": "^0.9.0",
 		"autoprefixer-core": "^5.1.7",
 		"body-parser": "^1.12.2",
 		"compression": "^1.4.3",
@@ -44,6 +47,7 @@
 		"gulp-postcss": "^4.0.3",
 		"html-minifier": "^0.7.0",
 		"lodash": "^3.6.0",
+		"mongojs": "^0.18.2",
 		"normalize.css": "^3.0.2",
 		"roman-numerals": "^0.3.2",
 		"serve-favicon": "^2.2.0"

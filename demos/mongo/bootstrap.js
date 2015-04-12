@@ -1,7 +1,7 @@
-var connect = "mongodb://nodejitsu:5ea0438be419e2350db3b2f6d9add55a@troup.mongohq.com:10019/nodejitsudb4317056101";
+var connect = "mongodb://104.236.204.157:27017/farm";
 var _ = require("lodash");
 var mongojs = require("mongojs");
-var db = mongojs(connect, ["animals", "people"]);
+var db = mongojs(connect, ["animals"]);
 var async = require("async");
 
 var types = ["cow", "pig", "chicken"];
@@ -14,7 +14,7 @@ function makeFunc(type, weight, name) {
 	return function(cb) {
 		db.animals.save({
 			type: type,
-			weights: weight,
+			weight: weight,
 			name: name
 		}, function() {
 			console.log("saved");

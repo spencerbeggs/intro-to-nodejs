@@ -1,6 +1,6 @@
-var connect = "mongodb://nodejitsu:5ea0438be419e2350db3b2f6d9add55a@troup.mongohq.com:10019/nodejitsudb4317056101";
+var connect = "mongodb://104.236.204.157:27017/farm";
 var mongojs = require("mongojs");
-var db = mongojs(connect, ["animals", "people"]);
+var db = mongojs(connect, ["animals"]);
 
 db.animals.find({
 	weight: {

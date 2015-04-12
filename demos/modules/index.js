@@ -1,10 +1,5 @@
-var people = [{
-	name: "spencer",
-	age: 33
-}, {
-	name: "ben",
-	age: 36
-}, {
-	name: "jackson",
-	age: 13
-}];
+var foo = require("./foo");
+
+setInterval(function() {
+	console.log(foo());
+}, 1000);

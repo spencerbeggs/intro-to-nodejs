@@ -427,12 +427,7 @@ th {
 }
 
 body {
-  background-color: green;
-}
-body main {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: red;
 }
 
-/*# sourceMappingURL=app-0.0.0.css.map */
+/*# sourceMappingURL=react-1.0.0.css.map */

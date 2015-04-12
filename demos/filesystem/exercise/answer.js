@@ -13,16 +13,16 @@
 var fs = require("fs");
 
 // read the text file
-fs.readFile("sonnets.txt", {
-  encoding: "utf8"
-  },function(err, text) {
-  // inside the callback split the text into an array at the breaks;
-  var sonnets = text.split("---\n");
-  // loop over the array
-  for (var i = 0; i < sonnets.length; i++) {
-    //save each sonnet as its own file
-    fs.writeFile("output/" + i, sonnets[i], function() {
-      console.log("file saved");
-    });
-  }
+fs.readFile("./sonnets.txt", {
+	encoding: "utf8"
+}, function(err, text) {
+	// inside the callback split the text into an array at the breaks;
+	var sonnets = text.split("---\n");
+	// loop over the array
+	for (var i = 0; i < sonnets.length; i++) {
+		//save each sonnet as its own file
+		fs.writeFile("output/" + i, sonnets[i], function() {
+			console.log("file saved");
+		});
+	}
 });

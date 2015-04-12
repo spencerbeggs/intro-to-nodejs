@@ -10,6 +10,7 @@ var taskListing = require("gulp-task-listing");
 var suffix = config.env === "prod" ? ".min" : "";
 
 tasks.nodemon({
+	start: "./lib/index.js",
 	watch: [
 		"lib/**/*.js",
 		"lib/templates/**/*.hbs"
@@ -55,7 +56,7 @@ tasks.zone({
 
 gulp.task("help", taskListing);
 
-//gulp.task("dev", gulp.series(gulp.parallel(["react", "backbone"]), "nodemon", "browser-sync"));
+gulp.task("dev", gulp.series(gulp.parallel(["react", "backbone"]), "nodemon", "browser-sync"));
 
 //gulp.task("build", gulp.parallel("react-build", "backbone-build"));
 

@@ -13,3 +13,6 @@ logs
 results
 node_modules
 bower_components
+lib/public/css/*.css
+lib/public/css/*.map
+lib/public/js/*.js

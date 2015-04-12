@@ -16,4 +16,4 @@ bower_components
 lib/public/css/*.css
 lib/public/css/*.map
 lib/public/js/*.js
-lib/demos/filesystem/excercise/*.txt
+lib/demos/filesystem/excercise/output/*.txt

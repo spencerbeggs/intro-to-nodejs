@@ -18,8 +18,9 @@
 		"sushi": "node demos/callbacks/sushi.js",
 		"fs-read": "node demos/filesystem/read.js",
 		"fs-write": "node demos/filesystem/write.js",
+		"fs-watch": "node demos/filesystem/watch.js",
 		"filesystem": "node demos/filesystem/index.js",
-		"filsystem-exercise": "node demos/filesystem/exercise/index.js",
+		"filesystem-exercise": "node demos/filesystem/exercise/index.js",
 		"filesystem-answer": "node demos/filesystem/exercise/answer.js"
 	},
 	"repository": {

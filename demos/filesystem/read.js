@@ -1,6 +1,7 @@
 var fs = require("fs");
+var path = require("path");
 
-fs.readFile(__dirname + "/cat.txt", {
+fs.readFile(path.resolve(__dirname + "/../../package.json"), {
 	encoding: "utf-8"
 }, function(err, data) {
 	if (err) {

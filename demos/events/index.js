@@ -1,13 +1,25 @@
-var http = require("http");
+var EventEmitter = require("events").EventEmitter;
+var util = require("util");
 
-var server = http.createServer(function(req, res) {
-	res.writeHead(200, {
-		"Content-Type": "text/plain"
-	});
-	res.end("Hello World\n");
-}).listen(3000, "127.0.0.1");
-console.log("Server running at http://127.0.0.1:3000");
+function Dog(name) {
+	var self = this;
+	// call the super constructor to initialize `this`
+	EventEmitter.call(this);
+	this.name = name;
+	this.bark = function() {
+		console.log(self.name + ": bark!");
+	};
+	setInterval(function() {
+		self.bark();
+		self.emit("bark");
+	}, 2000);
+}
 
-server.on("connection", function() {
-	console.log("client connected!");
+util.inherits(Dog, EventEmitter);
+
+var petey = new Dog("Petey");
+var fluffy = new Dog("Fluffy");
+
+petey.on("bark", function() {
+	console.log("Quiet, Petey!");
 });

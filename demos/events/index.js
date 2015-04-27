@@ -11,7 +11,9 @@ function Dog(name) {
 	};
 	setInterval(function() {
 		self.bark();
-		self.emit("bark");
+		self.emit("bark", {
+			foo: "bar"
+		});
 	}, 2000);
 }
 
@@ -20,6 +22,6 @@ util.inherits(Dog, EventEmitter);
 var petey = new Dog("Petey");
 var fluffy = new Dog("Fluffy");
 
-petey.on("bark", function() {
+petey.once("bark", function(data) {
 	console.log("Quiet, Petey!");
 });

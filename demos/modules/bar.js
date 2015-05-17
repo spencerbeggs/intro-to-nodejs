@@ -1,3 +1,3 @@
-console.log("Executing bar.js");
-
-module.exports = Date.now();
+module.exports = function() {
+	return Date.now();
+}

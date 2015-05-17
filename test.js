@@ -1,1 +1,3 @@
-console.log("hello world!");
+function speak(message) {
+	console.log(message);
+}

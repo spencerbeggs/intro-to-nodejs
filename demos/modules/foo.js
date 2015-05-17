@@ -1,3 +1,3 @@
-module.exports = function() {
-	return Date.now();
-};
+console.log("executing foo");
+
+module.exports = "Foo";

@@ -1,6 +1,10 @@
 for (var i = 0; i < 10; i++) {
-	setTimeout(function() {
-		console.log(i);
-	}, 2000);
+	(function() {
+		var j = i;
+		setTimeout(function() {
+			console.log(j);
+		}, 2000);
+	})();
+
 }
 console.log("Last line");

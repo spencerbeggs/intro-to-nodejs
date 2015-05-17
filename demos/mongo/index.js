@@ -1,6 +1,6 @@
-var connect = "mongodb://104.236.204.157:27017/farm";
+var connect = "mongodb://spencer.codes:27017/demo";
 var mongojs = require("mongojs");
-var db = mongojs(connect, ["animals"]);
+var db = mongojs(connect, ["animals", "places"]);
 
 db.animals.find({
 	name: "Spencer",
@@ -19,4 +19,14 @@ db.animals.find({
 // 	color: "blue"
 // }, function(err, doc) {
 // 	console.log(doc);
+// });
+
+// db.places.find({
+// 	//type: "restaurant",
+// 	loc: {
+// 		$near: [-73.989546, 40.739653],
+// 		$maxDistance: 10 / 69
+// 	}
+// }, function(err, docs) {
+// 	console.log(docs);
 // });

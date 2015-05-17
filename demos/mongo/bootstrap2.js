@@ -1,4 +1,4 @@
-var connect = "mongodb://104.236.204.157:27017/nyc";
+var connect = "mongodb://spencer.codes:27017/demo";
 var _ = require("lodash");
 var mongojs = require("mongojs");
 var db = mongojs(connect, ["places"]);

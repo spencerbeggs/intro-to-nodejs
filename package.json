@@ -23,7 +23,9 @@
 		"filesystem-exercise": "node demos/filesystem/exercise/index.js",
 		"filesystem-answer": "node demos/filesystem/exercise/answer.js",
 		"events": "node demos/events/index.js",
-		"mongo": "node demos/mongo/index.js"
+		"mongo": "node demos/mongo/index.js",
+		"global": "node demos/global/index.js",
+		"global-vars": "node demos/global/variables.js"
 	},
 	"repository": {
 		"type": "git",

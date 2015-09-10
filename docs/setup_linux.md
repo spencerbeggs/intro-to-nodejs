@@ -60,7 +60,7 @@ apm install atom-beautify atom-handlebars jshint react
 The [Node Version Manager](https://github.com/creationix/nvm) allows us to install and quickly switch between different versions of Node. In a new Terminal:
 
 ```
-curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
 ```
 
 Next you need to enable NVM:
@@ -72,16 +72,16 @@ source ~/.nvm/nvm.sh
 Download the latest version of Node:
 
 ```
-nvm install 0.12
+nvm install 4
 ```
 
-Tell new shells to use nvm and Node 0.12 on start up:
+Tell new shells to use nvm and Node v4.0.0 on start up:
 
 ```
-echo -e '\n#Config for Intro to Node.JS\nsource ~/.nvm/nvm.sh\nnvm use 0.12\nexport NODE_ENV=development' >> ~/.bash_profile
+echo -e '\n#Config for Intro to Node.JS\nsource ~/.nvm/nvm.sh\nnvm use 4\nexport NODE_ENV=development' >> ~/.bash_profile
 ```
 
-If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node 0.12".
+If you have setup your system correctly, when you open a new Terminal window your should see the message, "Now using Node v4.0.0".
 
 ![](img/nvm_install.png)
 

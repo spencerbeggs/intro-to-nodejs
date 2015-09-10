@@ -1,24 +1,22 @@
 # Setup for Windows
 
-Node.JS generally runs fine on Windows. Since there are many permutations of PC hardware and software, the instructions below are a generic way of installing a C++ compiler, Git, a text editor and Node.JS via the Node Version Manger for Windows.
+Download the [Node.JS Windows Installer](https://nodejs.org/en/download/) from the Node.JS downloads page. Run the installer and then restart your computer.
 
-## Install a C++ Compiler
-
-One of the powerful features of Node.JS is that can use native C++ extensions. To be able to compile C++ code we are going to need some development tools.
-
-You can quickly install build tools from the  [Win-builds](http://win-builds.org/1.5.0/win-builds-1.5.0.exe) package manager.
-
-After you have installed Win-builds tell your shell to use the version you want. For 64-bit Windows:
-
+To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type:
 ```
-echo 'source /opt/windows_64/bin/win-builds-switch >/dev/null' >> ~/.profile
+node -v
 ```
 
-For 32-bit Windows:
+This should report the version number, which should be v4.0.0.
 
+Now test NPM by typing:
 ```
-echo 'source /opt/windows_32/bin/win-builds-switch >/dev/null' >> ~/.profile
+npm -v
 ```
+
+This should be v2.14.2.
+
+If you numbers are close but not exact, don't worry. As long as you have Node v4 and NPM v2, you should be OK.
 
 ## Install Git
 
@@ -38,27 +36,6 @@ After the shell commands have installed, we can add a few useful plugins to Atom
 
 ```
 apm install atom-beautify atom-handlebars jshint react
-```
-
-## Install NVMW and the Latest Node.JS
-
-The [Node Version Manager for Windows](https://github.com/creationix/nvm) allows us to install and quickly switch between different versions of Node. In a new Command Prompt:
-
-```
-git clone git://github.com/hakobera/nvmw.git "%HOMEDRIVE%%HOMEPATH%\.nvmw"
-
-```
-
-Activate nvmw by adding nvmw directory to your PATH environment variable:
-
-```
-set "PATH=%HOMEDRIVE%%HOMEPATH%\.nvmw;%PATH%"
-```
-
-Download the latest version of Node:
-
-```
-nvmw install 0.12.0
 ```
 
 ## Install RoboMongo

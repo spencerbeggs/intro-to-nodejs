@@ -1,15 +1,15 @@
-var connect = "mongodb://spencer.codes:27017/demo";
+var connect = "mongodb://intro:test@ds035348.mongolab.com:35348/intro";
 var mongojs = require("mongojs");
-var db = mongojs(connect, ["animals", "places"]);
+var db = mongojs(connect, ["animals"]);
 
 db.animals.find({
-	name: "Spencer",
-	weight: {
-		$gt: 10,
-		$lte: 16
-	}
+  name: "Spencer",
+  weight: {
+    $gt: 10,
+    $lte: 16
+  }
 }, function(err, docs) {
-	console.log(docs);
+  console.log(docs);
 });
 
 // db.animals.insert({

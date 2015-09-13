@@ -1,4 +1,4 @@
-var connect = "mongodb://spencer.codes:27017/demo";
+var connect = "mongodb://intro:test@ds035348.mongolab.com:35348/intro";
 var _ = require("lodash");
 var mongojs = require("mongojs");
 var db = mongojs(connect, ["animals"]);
@@ -11,22 +11,22 @@ var names = ["Tom", "Sally", "Erin", "Brad", "Tim", "Chuck", "Lauren", "Susan", 
 var funcs = [];
 
 function makeFunc(type, weight, name) {
-	return function(cb) {
-		db.animals.save({
-			type: type,
-			weight: weight,
-			name: name
-		}, function() {
-			console.log("saved");
-			cb(null);
-		});
-	};
+  return function(cb) {
+    db.animals.save({
+      type: type,
+      weight: weight,
+      name: name
+    }, function() {
+      console.log("saved");
+      cb(null);
+    });
+  };
 }
 
 for (var i = 0; i < 100; i++) {
-	funcs.push(makeFunc(_.sample(types), _.sample(weights), _.sample(names)));
+  funcs.push(makeFunc(_.sample(types), _.sample(weights), _.sample(names)));
 }
 
 async.parallel(funcs, function() {
-	console.log("done!");
+  console.log("done!");
 });
